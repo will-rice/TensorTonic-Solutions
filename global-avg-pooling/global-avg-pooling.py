@@ -7,5 +7,5 @@ def global_avg_pool(x):
     """
     # Write code here
     if x.ndim < 3:
-        raise ValueError("ndim less than 3")
+        raise ValueError("Supports (N,C,H,W) and (C,H,W)")
     return x.mean(axis=(-2, -1))
